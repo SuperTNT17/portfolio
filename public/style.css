@@ -11,5 +11,43 @@ html {
 }
 
 body {
+    font-family: sans-serif;
     font-size: 2rem;
+    color: #eee;
+    background-color: #333;
+    height: 100%;
+}
+
+a{
+    color: rgb(112, 112, 255)
+}
+
+.projects-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50rem;
+    padding: 2rem;
+    /* background-color: rgb(89, 226, 165); */
+    border: rgb(102, 211, 175) 0.3rem solid;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.project-title{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.project-image{
+}
+
+.project-link{
+    height: 20%;
+    background-color: red;
 }

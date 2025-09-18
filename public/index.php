@@ -4,6 +4,8 @@ $mysqli = new mysqli($host, $user, $dbpassword, $dbname);
 
 $stmt = $mysqli->prepare("SELECT * FROM projects");
 $stmt->execute();
+$result = $stmt->get_result();
+$stmt->close();
 ?>
 
 <!DOCTYPE html>
@@ -17,23 +19,26 @@ $stmt->execute();
 </head>
 
 <body>
-    <h1>test</h1>
-    <?php
-    $result = $stmt->get_result();
-    foreach ($result as $row){
-        echo "title: " . $row['title'];
-        echo "<br>";
-        echo "desc: " . $row['description'];
-        echo "<br>";
-        ?>
-        <img src="<?php echo $row['image']?>" alt="test image">
-        <?php
-        echo "<br>";
-        ?>
-        <a href="<?php echo $row['link']?>">klik mij!</a>
-        <?php
-    }
-    ?>
+    <h1>Portfolio</h1>
+    <main>
+        <section>
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <?php
+                foreach ($result as $row) {
+                    ?>
+                    <div class="project">
+                        <p class="project-title"><?=$row['title']?></p>
+                        <img class="project-image" src="<?=$row['image']?>" alt="afbeelding van project">
+                        <p class="project-description"><?=$row['description']?></p>
+                        <a class="project-link" href="<?=$row['link']?>">link naar live project</a>
+                    </div>
+                    <?
+                }
+                ?>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
