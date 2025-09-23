@@ -4,7 +4,7 @@ $mysqli = new mysqli($host, $user, $dbpassword, $dbname);
 
 $stmt = $mysqli->prepare("SELECT * FROM projects");
 $stmt->execute();
-$result = $stmt->get_result();
+$projects = $stmt->get_result();
 $stmt->close();
 ?>
 
@@ -25,13 +25,13 @@ $stmt->close();
             <h2>Projects</h2>
             <div class="projects-container">
                 <?php
-                foreach ($result as $row) {
+                foreach ($projects as $project) {
                     ?>
                     <div class="project">
-                        <p class="project-title"><?=$row['title']?></p>
-                        <img class="project-image" src="<?=$row['image']?>" alt="afbeelding van project">
-                        <p class="project-description"><?=$row['description']?></p>
-                        <a class="project-link" href="<?=$row['link']?>">link naar live project</a>
+                        <p class="project-title"><?=$project['title']?></p>
+                        <img class="project-image" src="<?="img/".$project['image']?>" alt="afbeelding van project">
+                        <p class="project-description"><?=$project['description']?></p>
+                        <a class="project-link" href="<?=$project['link']?>">link naar live project</a>
                     </div>
                     <?
                 }
