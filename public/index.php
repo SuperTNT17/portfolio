@@ -19,21 +19,26 @@ $stmt->close();
 </head>
 
 <body>
-    <h1>Portfolio</h1>
     <main>
-        <section>
+        <section class="landing">
+            <div class="landing-text">
+                <h1>Robin Lemmers</h1>
+                <h2>Portfolio</h2>
+            </div>
+        </section>
+        <section class="projects">
             <h2>Projects</h2>
             <div class="projects-container">
                 <?php
                 foreach ($projects as $project) {
-                    ?>
+                ?>
                     <div class="project">
-                        <p class="project-title"><?=$project['title']?></p>
-                        <img class="project-image" src="<?="img/".$project['image']?>" alt="afbeelding van project">
-                        <p class="project-description"><?=$project['description']?></p>
-                        <a class="project-link" href="<?=$project['link']?>">link naar live project</a>
+                        <p class="project-title"><?= $project['title'] ?></p>
+                        <img class="project-image" src="<?= "img/" . $project['image'] ?>" alt="afbeelding van project">
+                        <p class="project-description"><?= $project['description'] ?></p>
+                        <a class="project-link" href="<?= $project['link'] ?>">link naar live project</a>
                     </div>
-                    <?
+                <?
                 }
                 ?>
             </div>
