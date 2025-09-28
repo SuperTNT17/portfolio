@@ -22,7 +22,7 @@ include "../source/dbconnect.php";
             </div>
         </section>
         <section class="projects">
-            <h2>Projects</h2>
+            <h1>Projects</h1>
             <div class="projects-container">
                 <?php
                 foreach ($projects as $project) {
@@ -39,6 +39,13 @@ include "../source/dbconnect.php";
             </div>
         </section>
     </main>
+    <footer>
+        <p class="copyright">&copy; 2025 Robin Lemmers</p>
+        <ul class="footerLinks">
+            <li><a href="https://github.com/SuperTNT17" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
