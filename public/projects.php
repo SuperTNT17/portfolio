@@ -9,7 +9,7 @@ include "../source/dbconnect.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Portfolio - Projects</title>
 </head>
 
 <body>
@@ -23,22 +23,7 @@ include "../source/dbconnect.php";
         </nav>
     </header>
     <main>
-        <section class="landing">
-            <div class="landing-text">
-                <h1>Robin Lemmers</h1>
-                <h2>Full-stack web dev</h2>
-            </div>
-            <div class="landing-buttons">
-                <div class="landing-button-projects">
-                    <a href="#projects">Projects</a>
-                </div>
-                <div class="landing-button-skills">
-                    <a href="#skills">Skills</a>
-                </div>
-            </div>
-        </section>
         <section class="projects" id="projects">
-            <h1>Projects</h1>
             <div class="projects-container">
                 <?php
                 foreach ($projects as $project) {
@@ -53,20 +38,6 @@ include "../source/dbconnect.php";
                 }
                 ?>
             </div>
-            <a href="projects.php" class="projects-page-button">Alle projecten</a>
-        </section>
-        <section class="skills" id="skills">
-            <h2>Skills</h2>
-            <p>idk</p>
         </section>
     </main>
-    <footer>
-        <p class="copyright">&copy; 2025 Robin Lemmers</p>
-        <ul class="footerLinks">
-            <li><a href="https://github.com/SuperTNT17" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-        </ul>
-    </footer>
 </body>
-
-</html>
