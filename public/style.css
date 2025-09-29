@@ -78,7 +78,7 @@ nav>ul {
 }
 
 .nav-active {
-    border-bottom: 0.1rem var(--accent-color) solid;
+    border-bottom: 0.2rem var(--accent-color) solid;
 }
 
 nav>ul>li>a {
@@ -88,6 +88,7 @@ nav>ul>li>a {
 main {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .landing {
@@ -102,6 +103,21 @@ main {
 
 .landing-text {
     font-size: 175%;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-text-titles {
+    display: flex;
+    gap: 1rem;
+}
+
+.title-red {
+    color: var(--accent-color);
+}
+
+.title-blue {
+    color: var(--url-text-color);
 }
 
 .landing-buttons {
@@ -154,6 +170,7 @@ main {
     align-items: center;
     gap: 5rem;
     padding: 5rem;
+    min-height: 95vh;
 }
 
 .projects>h2 {
@@ -233,11 +250,36 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 5rem;
-    gap: 5rem;
+    gap: 3.5rem;
 }
 
 .skills>h2 {
     font-size: 200%;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.skill {
+    border: var(--url-text-color) 0.3rem solid;
+    box-shadow: var(--url-text-color) 0 0 1.5rem;
+    border-radius: 2rem;
+    width: 65vw;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.skill>h3 {
+    font-size: 137.5%;
 }
 
 footer {
