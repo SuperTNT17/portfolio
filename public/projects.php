@@ -10,7 +10,7 @@ include "../source/dbconnect.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8f0691896d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio - Projects</title>
+    <title>Portfolio - Projecten</title>
 </head>
 
 <body>

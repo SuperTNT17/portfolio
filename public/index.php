@@ -3,7 +3,7 @@ include "../source/dbconnect.php";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -82,7 +82,7 @@ include "../source/dbconnect.php";
         </section>
     </main>
     <footer>
-        <p class="copyright"><img class="no-ai" src="img/no-ai-icon-01.png" alt="Icon that shows I didn't use AI">&amp; &copy; 2025 Robin Lemmers</p>
+        <p class="copyright"><img class="no-ai" src="img/no-ai-icon-01.png" alt="Icon dat aantoont dat ik geen AI heb gebruikt">&amp; &copy; 2025 Robin Lemmers</p>
         <ul class="footerLinks">
             <li><a href="https://github.com/SuperTNT17" target="_blank">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
             <li><a href="https://www.linkedin.com/in/robin-lemmers-ab2539250/" target="_blank">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
