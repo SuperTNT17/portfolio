@@ -7,10 +7,10 @@
 }
 
 :root {
-    --dark-bg-color: #272727;
+    --dark-bg-color: hsl(0, 0%, 15%);
     --main-bg-color: #333;
-    --less-light-bg-color: #373737;
-    --light-bg-color: #474747;
+    --less-light-bg-color: hsl(0, 0%, 22%);
+    --light-bg-color: hsl(0, 0%, 28%);
     --main-text-color: #eee;
     --url-text-color: hsl(240, 100%, 70%);
     --url-text-color-hover: hsl(240, 100%, 80%);
@@ -64,9 +64,9 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 10rem;
     padding: 1rem;
-    margin: 0 5rem;
 }
 
 nav>ul {
@@ -75,6 +75,10 @@ nav>ul {
     justify-content: center;
     align-items: center;
     gap: 10rem;
+}
+
+.nav-active {
+    border-bottom: 0.1rem var(--accent-color) solid;
 }
 
 nav>ul>li>a {
@@ -88,7 +92,6 @@ main {
 
 .landing {
     background-color: var(--dark-bg-color);
-    /* background: radial-gradient(ellipse, var(--accent-color), var(--dark-bg-color) 35%); */
     height: 95vh;
     display: flex;
     flex-direction: column;
@@ -153,6 +156,10 @@ main {
     padding: 5rem;
 }
 
+.projects>h2 {
+    font-size: 200%;
+}
+
 .projects-container {
     display: flex;
     gap: 2rem;
@@ -201,7 +208,44 @@ main {
     width: max-content;
 }
 
+.projects-page-button {
+    background-color: var(--accent-color);
+    color: var(--main-text-color);
+    width: 20rem;
+    height: 4rem;
+    font-size: 125%;
+    border-radius: 1rem;
+    text-align: center;
+    align-content: center;
+    transition: background-color 100ms linear;
+}
+
+.projects-page-button:hover {
+    background-color: var(--accent-color-hover);
+    color: var(--main-text-color);
+    transition: background-color 100ms linear;
+}
+
+.skills {
+    background-color: var(--less-light-bg-color);
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    gap: 5rem;
+}
+
+
+
+.skills>h2 {
+    font-size: 200%;
+}
+
 footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
     background-color: var(--light-bg-color);
     height: 7.5rem;
     display: flex;
@@ -211,8 +255,24 @@ footer {
     align-items: center;
 }
 
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.no-ai {
+    width: 2rem;
+    height: 2rem;
+}
+
 .footerLinks {
     display: flex;
     flex-direction: row;
     gap: 5rem;
+}
+
+.footerLinks>li>a>i {
+    font-size: 75%;
 }
