@@ -19,6 +19,7 @@ include "../source/dbconnect.php";
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a class="nav-active" href="projects.php">Projecten</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
     </header>
