@@ -21,6 +21,8 @@
     </header>
     <main>
         <section class="contact-info">
+            <h1>Contact</h1>
+            <h2>Neem direct contact met mij op door te bellen of een email te sturen</h2>
             <!--
             Source - https://stackoverflow.com/a/41566570
             Posted by cyptus, modified by community. See post 'Timeline' for change history

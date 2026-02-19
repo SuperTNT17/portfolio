@@ -189,6 +189,7 @@ main {
 .project {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     width: 25%;
     height: 50rem;
@@ -196,7 +197,7 @@ main {
     border: var(--accent-color) 0.3rem solid;
     box-shadow: var(--accent-color) 0 0 1.5rem;
     border-radius: 2rem;
-    text-align: center;
+    /* text-align: center; */
     transition: background-color 100ms linear;
 }
 
@@ -215,13 +216,15 @@ main {
 }
 
 .project-description {
-    height: 15rem;
-    align-content: center;
+    min-height: 15rem;
+    overflow-y: scroll;
 }
 
 .project-link {
     align-self: center;
+    justify-self: stretch;
     height: 2.5rem;
+    /* height: 100%; */
     width: max-content;
 }
 
@@ -289,6 +292,17 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.contact-info > h1{
+    font-size: 5rem;
+    margin: 5rem;
+    margin-bottom: 3rem
+}
+
+.contact-info > h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
 /*
