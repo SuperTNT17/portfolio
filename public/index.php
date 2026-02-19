@@ -58,7 +58,7 @@ include "../source/dbconnect.php";
                         <p class="project-description"><?= $project['description'] ?></p>
                         <a class="project-link" href="<?= $project['link'] ?>" target="_blank">Live Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                <?
+                <?php
                     $count++;
                 }
                 ?>
