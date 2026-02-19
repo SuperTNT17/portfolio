@@ -291,6 +291,20 @@ main {
     align-items: center;
 }
 
+/*
+Source - https://stackoverflow.com/a/41566570
+Posted by cyptus, modified by community. See post 'Timeline' for change history
+Retrieved 2026-02-19, License - CC BY-SA 4.0
+*/
+
+.cryptedmail:after {
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+
+.cryptedphone:after{
+    content: "+" attr(data-countrycode) attr(data-number);
+}
+
 footer {
     position: relative;
     bottom: 0;

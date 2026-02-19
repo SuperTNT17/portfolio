@@ -21,8 +21,23 @@
     </header>
     <main>
         <section class="contact-info">
-            <p>mail:</p>
-            <p>tel:</p>
+            <!--
+            Source - https://stackoverflow.com/a/41566570
+            Posted by cyptus, modified by community. See post 'Timeline' for change history
+            Retrieved 2026-02-19, License - CC BY-SA 4.0
+            -->
+
+            <p>mail:
+                <a href="#" class="cryptedmail"
+                data-name="r.lemmers"
+                data-domain="outlook"
+                data-tld="com"
+                onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a></p>
+            <p>tel:
+                <a href="#" class="cryptedphone"
+                data-countrycode="31"
+                data-number="0624227346"
+                onclick="window.location.href = 'tel:' + this.dataset.countrycode + this.dataset.number; return false;"></a></p>
         </section>
     </main>
 </body>
