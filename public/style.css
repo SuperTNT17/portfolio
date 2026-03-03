@@ -192,13 +192,12 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 25%;
+    width: 30rem;
     height: 50rem;
     padding: 2rem;
     border: var(--accent-color) 0.3rem solid;
     box-shadow: var(--accent-color) 0 0 1.5rem;
     border-radius: 2rem;
-    /* text-align: center; */
     transition: background-color 100ms linear;
 }
 
@@ -217,8 +216,9 @@ main {
 }
 
 .project-description {
-    min-height: 15rem;
+    height: 100%;
     overflow-y: scroll;
+    font-size: 95%;
 }
 
 .project-link {
@@ -286,7 +286,7 @@ main {
     font-size: 137.5%;
 }
 
-.contact-info{
+.contact-info {
     width: 100%;
     height: 100%;
     display: flex;
@@ -295,13 +295,13 @@ main {
     align-items: center;
 }
 
-.contact-info > h1{
+.contact-info>h1 {
     font-size: 5rem;
     margin: 5rem;
     margin-bottom: 3rem
 }
 
-.contact-info > h2{
+.contact-info>h2 {
     font-size: 2rem;
     margin-bottom: 3rem;
 }
@@ -313,10 +313,10 @@ Retrieved 2026-02-19, License - CC BY-SA 4.0
 */
 
 .cryptedmail:after {
-    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
 }
 
-.cryptedphone:after{
+.cryptedphone:after {
     content: "+" attr(data-countrycode) attr(data-number);
 }
 
@@ -351,3 +351,9 @@ footer {
 .footerLinks>li>a>i {
     font-size: 75%;
 }
+
+/* @media screen and (max-width: 600px) {
+    main{
+        background-color: red;
+    }
+} */

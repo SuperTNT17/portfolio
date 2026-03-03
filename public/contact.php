@@ -31,19 +31,24 @@
 
             <p>mail:
                 <a href="#" class="cryptedmail"
-                data-name="robinlemmers.dev"
-                data-domain="outlook"
-                data-tld="com"
-                onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a></p>
+                    data-name="robinlemmers.dev"
+                    data-domain="outlook"
+                    data-tld="com"
+                    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
+            </p>
             <p>tel:
                 <a href="#" class="cryptedphone"
-                data-countrycode="31"
-                data-number="0624227346"
-                onclick="window.location.href = 'tel:' + this.dataset.countrycode + this.dataset.number; return false;"></a></p>
+                    data-countrycode="31"
+                    data-number="0624227346"
+                    onclick="window.location.href = 'tel:' + this.dataset.countrycode + this.dataset.number; return false;"></a>
+            </p>
         </section>
     </main>
     <footer>
-        <p class="copyright"><img class="no-ai" src="img/no-ai-icon-01.png" alt="Icon dat aantoont dat ik geen AI heb gebruikt">&amp; &copy; 2026 Robin Lemmers</p>
+        <p class="copyright">
+            <a href="https://no-ai-icon.com/statement/?url=(robinlemmers.com)" target="_blank">
+                <img class="no-ai" src="img/no-ai-icon-01.png" alt="Icon dat aantoont dat ik geen AI heb gebruikt"></a>&amp; &copy; 2026 Robin Lemmers
+        </p>
         <ul class="footerLinks">
             <li><a href="https://github.com/SuperTNT17" target="_blank">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
             <li><a href="https://www.linkedin.com/in/robin-lemmers-ab2539250/" target="_blank">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
