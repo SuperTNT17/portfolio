@@ -9,6 +9,7 @@ include "../source/dbconnect.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8f0691896d.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
@@ -16,7 +17,10 @@ include "../source/dbconnect.php";
 <body id="home">
     <header>
         <nav>
-            <ul>
+            <button id="hamburger-button" onclick="toggleBurger()">
+                <i id="js-hamburger-icon" class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="js-burger-nav">
                 <li class="nav-active"><a href="#home">Home</a></li>
                 <li><a href="projects.php">Projecten</a></li>
                 <li><a href="contact.php">Contact</a></li>

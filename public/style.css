@@ -64,8 +64,11 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
     padding: 1rem;
+}
+
+#hamburger-button {
+    display: none;
 }
 
 nav>ul {
@@ -347,17 +350,43 @@ footer {
 }
 
 @media screen and (max-width: 875px) {
-    .project{
+    .project {
         width: 100%;
     }
 
-    .project-image{
+    .project-image {
         width: 75%;
     }
 
-    .projects-page-button{
+    .projects-page-button {
         width: 40rem;
         height: 5rem;
     }
 }
- 
+
+@media screen and (max-width: 520px) {
+    nav {
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #hamburger-button {
+        display: inline;
+        background: none;
+        border: 0;
+        font-size: 4rem;
+    }
+
+    nav>ul {
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    nav>ul>li {
+        border-bottom: 0.2rem solid black;
+    }
+}
