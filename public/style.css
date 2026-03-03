@@ -21,8 +21,6 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scrollbar-width: thin;
-    height: 100%;
 }
 
 body {
@@ -247,7 +245,6 @@ main {
 
 .skills {
     background-color: var(--less-light-bg-color);
-    height: 80rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,7 +267,6 @@ main {
     box-shadow: var(--url-text-color) 0 0 1.5rem;
     border-radius: 2rem;
     width: 65vw;
-    height: 11rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -350,9 +346,18 @@ footer {
     font-size: 75%;
 }
 
-/* @media screen and (max-width: 600px) {
-    main{
-        background-color: red;
+@media screen and (max-width: 875px) {
+    .project{
+        width: 100%;
     }
-} */
+
+    .project-image{
+        width: 75%;
+    }
+
+    .projects-page-button{
+        width: 40rem;
+        height: 5rem;
+    }
+}
  
