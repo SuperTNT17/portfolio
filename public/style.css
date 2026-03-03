@@ -217,15 +217,13 @@ main {
 
 .project-description {
     height: 100%;
-    overflow-y: scroll;
-    font-size: 95%;
+    overflow-y: auto;
 }
 
 .project-link {
     align-self: center;
     justify-self: stretch;
     height: 2.5rem;
-    /* height: 100%; */
     width: max-content;
 }
 
