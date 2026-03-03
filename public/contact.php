@@ -31,7 +31,7 @@
 
             <p>mail:
                 <a href="#" class="cryptedmail"
-                data-name="r.lemmers"
+                data-name="robinlemmers.dev"
                 data-domain="outlook"
                 data-tld="com"
                 onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a></p>
