@@ -32,7 +32,7 @@ include "../source/dbconnect.php";
             <h1>Projecten</h1>
             <p>Hier staan een aantal projecten die ik heb gemaakt of deel van het development team van ben geweest.</p>
             <p>Al deze projecten en meer zijn te vinden op mijn
-                <a href="https://github.com/SuperTNT17">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/SuperTNT17" target="_blank">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </p>
             <div class="projects-container">
                 <?php
