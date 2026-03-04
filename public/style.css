@@ -303,6 +303,13 @@ main {
     margin-bottom: 3rem;
 }
 
+.mail-and-tel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 /*
 Source - https://stackoverflow.com/a/41566570
 Posted by cyptus, modified by community. See post 'Timeline' for change history
@@ -347,6 +354,11 @@ footer {
 
 .footerLinks>li>a>i {
     font-size: 75%;
+}
+
+a>i{
+    font-size: 80%;
+
 }
 
 @media screen and (max-width: 875px) {

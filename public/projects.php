@@ -3,7 +3,7 @@ include "../source/dbconnect.php";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -31,6 +31,9 @@ include "../source/dbconnect.php";
         <section class="projects" id="projects">
             <h1>Projecten</h1>
             <p>Hier staan een aantal projecten die ik heb gemaakt of deel van het development team van ben geweest.</p>
+            <p>Al deze projecten en meer zijn te vinden op mijn
+                <a href="https://github.com/SuperTNT17">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </p>
             <div class="projects-container">
                 <?php
                 foreach ($projects as $project) {
@@ -48,7 +51,7 @@ include "../source/dbconnect.php";
         </section>
     </main>
     <?php
-        include_once("components/footer.php");
+    include_once("components/footer.php");
     ?>
 </body>
 
